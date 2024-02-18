@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trang Web Giới Thiệu</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+        }
+
+        header {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px;
+        }
+
+        section {
+            padding: 20px;
+            margin: 20px;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        #aboutUs {
+            text-align: center;
+        }
+
+        #contact {
+            text-align: center;
+        }
+
+        #contact button {
+            padding: 10px;
+            background-color: #333;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Website giới thiệu sản phẩm </h1>
+    </header>
+
+    <section id="introduction">
+        <h2>Giới Thiệu Bánh Đúc Gân</h2>
+        <p style="color: #0042f8; font-family: 'Courier New', Courier, monospace; font-size: 24px;">
+            Bánh đúc gân </p>   <p>Là một món ăn truyền thống của Việt Nam, nổi tiếng với hương vị đặc trưng và cách chế biến độc đáo. Bánh được làm từ nguyên liệu chính là bột nếp, nước và gân heo, tạo nên lớp vỏ mềm mịn, đặc trưng bởi vị ngon của gân và hương thơm của lá chuối.</p>
+        <img src="https://1.bp.blogspot.com/-REFsJQVUD6Q/YJZy8jEwBQI/AAAAAAAAIKs/rzcfSwoMQfELKSBVG4amuvWuMXqDmnlwQCNcBGAsYHQ/s600/banh-duc-gan-la-dua-cach-lam-khong-han-the-bep-banh.png" alt="Bánh Đúc Gân">
+    </section>
+
+    <section id="products">
+        <h2>Giới Thiệu Sữa Đậu Nành</h2>
+        <p>Sữa đậu nành là một sản phẩm thực phẩm xuất phát từ việc chiết xuất nước từ hạt đậu nành. Được biết đến như một thay thế thực phẩm giàu chất dinh dưỡng cho sữa động vật, sữa đậu nành không chỉ phù hợp cho người ăn chay mà còn là lựa chọn khá lành mạnh cho những người có chế độ ăn kiêng khoa học.</p>
+        <img src="https://cdn.nhathuoclongchau.com.vn/unsafe/800x0/filters:quality(95)/https://cms-prod.s3-sgn09.fptcloud.com/uong_sua_dau_nanh_vao_luc_nao_la_tot_nhat_va_uong_the_nao_cho_dung_1_b51db98e1c.png" alt="Sữa Đậu Nành">
+    </section>
+
+    <section id="aboutUs">
+        <h2>Địa chỉ</h2>
+        <p>Chợ Long Thành, Long Hậu, Lai Vung,  Đồng Tháp</p>
+    </section>
+
+    <section id="contact">
+        <h2>Liên Hệ</h2>
+        <p>Để biết thêm thông tin, vui lòng liên hệ chúng tôi:</p>
+        <button onclick="openZalo()">Liên hệ qua Zalo (chung với số điện thoại*)</button>
+        <p>Hoặc gọi điện thoại: <strong>(+84) 913391484</strong></p>
+    </section>
+    <footer style="text-align: center; padding: 10px; background-color: #333; color: white;">
+        &copy; 2024 huynhgiabao
+    </footer>
+
+    <script>
+        function openZalo() {
+            alert("Chuyển đến zalo");
+            window.location.href = "zalo://chat";
+            
+        }
+    </script>
+</body>
+</html>
