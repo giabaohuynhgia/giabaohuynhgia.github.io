@@ -3,87 +3,104 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Trang Web Giới Thiệu</title>
+    <title>HienThuyFood</title>
     <style>
+        
         body {
             font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f5f5f5;
+            background-color: #f9f9f9;
         }
-
-        header {
-            background-color: #333;
-            color: white;
-            text-align: center;
-            padding: 10px;
+        h1 {
+            color: #333;
         }
-
-        section {
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
             padding: 20px;
-            margin: 20px;
-            background-color: white;
-            border-radius: 8px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         }
-
-        #aboutUs {
-            text-align: center;
+        
+        .product {
+            background-color: #fff;
+            border: 1px solid #ddd;
+            padding: 20px;
+            margin-bottom: 20px;
         }
-
-        #contact {
-            text-align: center;
+        .product img {
+            max-width: 100%;
+            height: auto;
         }
-
-        #contact button {
-            padding: 10px;
-            background-color: #333;
-            color: white;
+        .product h2 {
+            font-size: 1.5rem;
+            margin-bottom: 10px;
+        }
+        .product p {
+            font-size: 1rem;
+            color: #777;
+        }
+        .buy-button {
+            background-color: #ff6600;
+            color: #fff;
+            padding: 10px 20px;
             border: none;
-            border-radius: 5px;
             cursor: pointer;
+            font-size: 1rem;
+        }
+        .buy-button:hover {
+            background-color: #e65c00;
+        }
+        .address {
+            background-color: #007bff;
+            color: #fff;
+            padding: 10px;
+            margin-top: 20px;
+            text-align: center;
+            font-size: 1.2rem;
+        }
+        .sdt{
+            background-color: #007bff;
+            color: #fff;
+            padding: 10px;
+            margin-top: 20px;
+            text-align: center;
+            font-size: 1.2rem;
         }
     </style>
 </head>
 <body>
-    <header>
-        <h1>Website giới thiệu sản phẩm </h1>
-    </header>
-
-    <section id="introduction">
-        <h2>Giới Thiệu Bánh Đúc Gân</h2>
-        <p style="color: #0042f8; font-family: 'Courier New', Courier, monospace; font-size: 24px;">
-            Bánh đúc gân </p>   <p>Là một món ăn truyền thống của Việt Nam, nổi tiếng với hương vị đặc trưng và cách chế biến độc đáo. Bánh được làm từ nguyên liệu chính là bột nếp, nước và gân heo, tạo nên lớp vỏ mềm mịn, đặc trưng bởi vị ngon của gân và hương thơm của lá chuối.</p>
-        <img src="https://1.bp.blogspot.com/-REFsJQVUD6Q/YJZy8jEwBQI/AAAAAAAAIKs/rzcfSwoMQfELKSBVG4amuvWuMXqDmnlwQCNcBGAsYHQ/s600/banh-duc-gan-la-dua-cach-lam-khong-han-the-bep-banh.png" alt="Bánh Đúc Gân">
-    </section>
-
-    <section id="products">
-        <h2>Giới Thiệu Sữa Đậu Nành</h2>
-        <p>Sữa đậu nành là một sản phẩm thực phẩm xuất phát từ việc chiết xuất nước từ hạt đậu nành. Được biết đến như một thay thế thực phẩm giàu chất dinh dưỡng cho sữa động vật, sữa đậu nành không chỉ phù hợp cho người ăn chay mà còn là lựa chọn khá lành mạnh cho những người có chế độ ăn kiêng khoa học.</p>
-        <img src="https://cdn.nhathuoclongchau.com.vn/unsafe/800x0/filters:quality(95)/https://cms-prod.s3-sgn09.fptcloud.com/uong_sua_dau_nanh_vao_luc_nao_la_tot_nhat_va_uong_the_nao_cho_dung_1_b51db98e1c.png" alt="Sữa Đậu Nành">
-    </section>
-
-    <section id="aboutUs">
-        <h2>Địa chỉ</h2>
-        <p>Chợ Long Thành, Long Hậu, Lai Vung,  Đồng Tháp</p>
-    </section>
-
-    <section id="contact">
-        <h2>Liên Hệ</h2>
-        <p>Để biết thêm thông tin, vui lòng liên hệ chúng tôi:</p>
-        <button onclick="openZalo()">Liên hệ qua Zalo (chung với số điện thoại*)</button>
-        <p>Hoặc gọi điện thoại: <strong>(+84) 913391484</strong></p>
-    </section>
-    <footer style="text-align: center; padding: 10px; background-color: #333; color: white;">
-        &copy; 2024 huynhgiabao
+    <div class="container">
+        <h1 style="color: blueviolet;">Hiền Thủy Food</h1>
+        <div class="product">
+            <img src="https://i.ex-cdn.com/nongnghiep.vn/files/bao_in/2020/11/11/122675421_975696799597971_1823060493574479171_n-0845_20201111_931-102208.jpeg" alt="Bánh đúc lá dứa ">
+            <h2>Bánh đúc lá dứa</h2>
+            <p>Giá: 100.000 VND</p>
+            <button class="buy-button">Mua ngay</button>
+        </div>
+        <div class="product">
+            <img src="https://www.btaskee.com/wp-content/uploads/2021/08/Sam-bo-luong.jpg" alt="Sâm bổ lượng">
+            <h2>Sâm bổ lượng</h2>
+            <p>Giá: 10.000 VND</p>
+            <button class="buy-button">Mua ngay</button>
+        </div>
+       
+    </div>
+    <div class="sdt">
+        <p>Liên hệ sđt <p style="color: #12cc50;">0913391484</p> hoặc zalo(cùng số) để đặt mua!
+    <div class="address">
+        <p>Địa chỉ: chợ Long Thành, Long Hậu, Lai Vung - Đồng Tháp</p>
+    </div>
+    <footer>
+        <p style="text-align: center;">&copy; 2024 huynhgiabao</p>
     </footer>
-
     <script>
-        function openZalo() {
-            alert("Chuyển đến zalo");
-            window.location.href = "zalo://chat";
+        document.addEventListener('DOMContentLoaded', function () {
+            var buyButtons = document.querySelectorAll('.buy-button');
             
-        }
+            buyButtons.forEach(function (button) {
+                button.addEventListener('click', function () {
+                    alert('Chức năng mua vẫn chưa được hoàn thiện. Bạn thông cảm.');
+                });
+            });
+        });
     </script>
 </body>
 </html>
