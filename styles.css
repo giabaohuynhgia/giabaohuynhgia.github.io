@@ -1,0 +1,80 @@
+/* Đặt lại các định dạng chung */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f8f8;
+}
+
+header {
+    background-color: #333;
+    padding: 20px;
+    text-align: center;
+    color: white;
+}
+
+#logo {
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+}
+
+h1 {
+    display: inline-block;
+}
+
+/* Định dạng riêng cho từng phần */
+section {
+    margin: 20px;
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+img {
+    max-width: 100%;
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+
+button {
+    padding: 15px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #333;
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: #555;
+}
+
+#user-count {
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+}
+
+#contact-zalo button {
+    background-color: #25d366;
+    color: white;
+}
+.address {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px;
+    margin-top: 20px;
+    text-align: center;
+    font-size: 1.2rem;
+}
+.sdt{
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px;
+    margin-top: 20px;
+    text-align: center;
+    font-size: 1.2rem;
+}
