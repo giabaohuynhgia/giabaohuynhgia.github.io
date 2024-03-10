@@ -3,102 +3,46 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>HienThuyFood</title>
-    <style>
-        
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #f9f9f9;
-        }
-        h1 {
-            color: #333;
-        }
-        .container {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 20px;
-        }
-        
-        .product {
-            background-color: #fff;
-            border: 1px solid #ddd;
-            padding: 20px;
-            margin-bottom: 20px;
-        }
-        .product img {
-            max-width: 100%;
-            height: auto;
-        }
-        .product h2 {
-            font-size: 1.5rem;
-            margin-bottom: 10px;
-        }
-        .product p {
-            font-size: 1rem;
-            color: #777;
-        }
-        .buy-button {
-            background-color: #ff6600;
-            color: #fff;
-            padding: 10px 20px;
-            border: none;
-            cursor: pointer;
-            font-size: 1rem;
-        }
-        .buy-button:hover {
-            background-color: #e65c00;
-        }
-        .address {
-            background-color: #007bff;
-            color: #fff;
-            padding: 10px;
-            margin-top: 20px;
-            text-align: center;
-            font-size: 1.2rem;
-        }
-        .sdt{
-            background-color: #007bff;
-            color: #fff;
-            padding: 10px;
-            margin-top: 20px;
-            text-align: center;
-            font-size: 1.2rem;
-        }
-        .e-button {
-            background-color: #5a3821;
-            color: #fff;
-            padding: 10px 20px;
-            border: none;
-            cursor: pointer;
-            font-size: 1rem;
-        }
-    </style>
+    <title>Trang web bán hàng</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="container">
-        <h1 style="color: blueviolet;">Hiền Thủy Food</h1>
-        <div class="product">
-            <img src="https://i.ex-cdn.com/nongnghiep.vn/files/bao_in/2020/11/11/122675421_975696799597971_1823060493574479171_n-0845_20201111_931-102208.jpeg" alt="Bánh đúc lá dứa ">
-            <h2>Bánh đúc lá dứa</h2>
-            <p>Giá: 100.000 VNĐ</p>
-            <button class="buy-button">Mua ngay</button>
-          <a href="http://127.0.0.1:3000/a.html"> <button class="e-button">Chi tiết</button></a> 
-        </div>
-        <div class="product">
-            <img src="https://www.btaskee.com/wp-content/uploads/2021/08/Sam-bo-luong.jpg" alt="Sâm bổ lượng">
-            <h2>Sâm bổ lượng</h2>
-            <p>Giá: 10.000 VNĐ</p>
-            <button class="buy-button">Mua ngay</button>
-        </div>
-        <div class="product">
-            <img src="https://static.5nhatnhat.com/upload/2022/12/30/uong-sua-dau-nanh-co-tang-noi-tiet-to-nu-1.jpg" alt="Sâm bổ lượng">
-            <h2>Sữa đậu nành</h2>
-            <p>Giá: 10.000 VNĐ</p>
-            <button class="buy-button">Mua ngay</button>
-        </div>
-       
-       
-    </div>
+    <header>
+        <img src="https://th.bing.com/th/id/OIG3.9Eg3XNG7P.bFDhnDOtww?pid=ImgGn" alt="Logo" id="logo">
+        <h1>Hiền Thủy </h1>
+    </header>
+    
+    <section id="product-intro-sam">
+        <h2> Sâm bổ lượng</h2>
+        <img src="https://yeva.vn/wp-content/uploads/Cong-dung-cua-che-sam-bo-luong-1024x768.jpg" alt="Sâm bổ lượng">
+        <p>Sâm bổ lượng là một món chè mát được nhiều người yêu thích, đón nhận. Với hương vị thanh mát, ngọt dịu giúp thanh nhiệt, giải tỏa đi cái nắng nóng của mùa hè... Mùa nào cũng được :)))</p>
+    </section>
+
+    <section id="product-intro-banh">
+        <h2> Bánh đúc lá dứa</h2>
+        <img src="https://i.ex-cdn.com/nongnghiep.vn/files/bao_in/2020/11/11/122675421_975696799597971_1823060493574479171_n-0845_20201111_931-102208.jpeg" alt="Bánh đúc lá dứa">
+        <p>Từ món bánh đúc truyền thống, người ta còn biến tấu với các loại bánh như: bánh đúc cẩm thạch, bánh đúc dừa, bánh đúc lạc, bánh đúc ngô…, tuy nhiên, bánh đúc lá dứa lại là món bánh hút người thưởng thức nhất bởi gam màu xanh tươi mát. Bạn đã biết cách làm bánh đúc lá dứa chưa? ... Toii không chỉ đâu :))</p>
+    </section>
+    <section id="product-intro-sua">
+        <h2> Sữa đậu nành</h2>
+        <img src="https://cdn.nhathuoclongchau.com.vn/unsafe/800x0/filters:quality(95)/https://cms-prod.s3-sgn09.fptcloud.com/uong_sua_dau_nanh_vao_luc_nao_la_tot_nhat_va_uong_the_nao_cho_dung_1_b51db98e1c.png" alt="Sữa đậu nành">
+        <p>Sữa đậu nành là loại sữa hạt mang lại nhiều công dụng có ích cho sức khỏe và sắc đẹp như tốt cho tim mạch, ngăn ngừa ung thư, hỗ trợ giảm cân, chống lão hóa...</p>
+    </section>
+
+    <section id="buy-now">
+        <h2>Đặt hàng</h2>
+        <button onclick="buyNow()">Mua ngay</button>
+    </section>
+
+    <section id="online-users">
+        <h2>Số lượt truy cập cùng lúc</h2>
+        <p id="user-count">0</p>
+    </section>
+
+    <section id="contact-zalo">
+        <h2>Liên hệ Zalo</h2>
+        <button onclick="contactZalo()">Liên hệ ngay</button>
+    </section>
     <div class="sdt">
         <p>Liên hệ sđt <p style="color: #12cc50;">0913391484(Gia Bảo)</p> hoặc zalo(cùng số) để đặt mua!
     <div class="address">
@@ -107,17 +51,7 @@
     <footer>
         <p style="text-align: center;">&copy; 2024 huynhgiabao, cập nhật lần cuối - 3/10/2024</p>
     </footer>
-    <script>
-        document.addEventListener('DOMContentLoaded', function () {
-            var buyButtons = document.querySelectorAll('.buy-button');
-            
-            buyButtons.forEach(function (button) {
-                button.addEventListener('click', function () {
-                    alert('Chức năng mua vẫn chưa được hoàn thiện. Bạn thông cảm.');
-                });
-            });
-        });
-       
-    </script>
+
+    <script src="script.js"></script>
 </body>
 </html>
