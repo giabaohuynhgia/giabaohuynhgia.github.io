@@ -3,7 +3,7 @@ let userCount = 0;
 
 // Chức năng khi click vào nút mua hàng
 function buyNow() {
-    alert("Bạn đã thêm sản phẩm vào giỏ hàng!");
+    alert("Chức năng đặt hàng vẫn chưa được hoàn thiện.Thực chất vẫn dùng đc mà dùng thì mất tiền ráng chịu :)))");
 }
 
 // Chức năng hiển thị số lượt truy cập cùng lúc
